@@ -2,6 +2,7 @@
 
 
 //  iphone event handler
+
  const plusBtn = document.getElementById("plus_btn");
  plusBtn.addEventListener('click', function(){
     // peoduct incress value handlar
@@ -13,9 +14,9 @@
     //  price increases handles
    const iPhonePrice =  document.getElementById("iphone_price").innerText;
    let iPhonePriceNUmber = parseInt(iPhonePrice);
-   let itemPrice = iPhonePriceNUmber + 1219;
-   document.getElementById("iphone_price").innerHTML = itemPrice;
-   updateProductPrice(itemPrice);
+   let  itemPrice = iPhonePriceNUmber + 1219;
+   let ProductPrice = document.getElementById("iphone_price").innerHTML = itemPrice;
+   
  })
 
 //  back pot event handler
@@ -32,8 +33,7 @@ backPotPlusBtn.addEventListener('click',function(){
     let backPotPriceNumber = parseInt(backPotPrice);
      let backPotprice = backPotPriceNumber + 59 ;
      document.getElementById("backPot_price").innerHTML = backPotprice ;
-     updateProductPrice(backPotprice );
-
+     
  })
 
 
@@ -42,7 +42,7 @@ backPotPlusBtn.addEventListener('click',function(){
 // minus i phone price 
 let minusBtn = document.getElementById("minus_btn");
 minusBtn.addEventListener("click", function(){
-    // peoduct decress value handlar
+    // peoduct decress value handler
     const  inputVlaue = document.getElementById("input_value").value;
      let inputVlaueNumber = parseInt(inputVlaue);
      let product = inputVlaueNumber - 1 ;
